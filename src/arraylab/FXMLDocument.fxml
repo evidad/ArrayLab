@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="arraylab.FXMLDocumentController">
+    <children>
+        <Label fx:id="arrayListLabel" layoutX="42.0" layoutY="285.0" minHeight="16" minWidth="69" prefHeight="74.0" prefWidth="506.0" wrapText="true" />
+      <TextField fx:id="numberInputTextField" layoutX="25.0" layoutY="50.0" text="Number input" />
+      <TextField fx:id="positionInputTextField" layoutX="419.0" layoutY="50.0" text="Position input" />
+      <Button fx:id="addSingleButton" layoutX="224.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleAddNumbers" text="Add Number in Position" />
+      <Button fx:id="deletePositionButton" layoutX="218.0" layoutY="90.0" mnemonicParsing="false" onAction="#handleDeleteNumber" text="Delete Number in Position" />
+      <Label fx:id="arrayListSortedLabel" layoutX="42.0" layoutY="360.0" minHeight="16" minWidth="69" prefHeight="74.0" prefWidth="506.0" wrapText="true" />
+      <Button fx:id="sortButton" layoutX="261.0" layoutY="166.0" mnemonicParsing="false" onAction="#sortArrayList" text="Sort Array" />
+      <Label fx:id="arraySizeLabel" layoutX="68.0" layoutY="93.0" prefHeight="18.0" prefWidth="70.0" text="Array Size" />
+      <Button fx:id="frequencyButton" layoutX="260.0" layoutY="128.0" mnemonicParsing="false" onAction="#highlightNumber" text="Frequency" />
+      <Label fx:id="errorLabel" layoutX="43.0" layoutY="210.0" prefHeight="74.0" prefWidth="506.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="14.0" prefHeight="18.0" prefWidth="118.0" text="Array Lab">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
